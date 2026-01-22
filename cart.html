@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warenkorb – Lizenz‑Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome (CDN) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-dpXfnhDhbJtu8Cn91aYHmUfNnYLWs5IhgnfvCQDXAiW0wvyVvCSy+NzvSwAOmLnjbJ9lZiLTmYWBhR/uxM3f2Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Lizenz‑Shop</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#products">Produkte</a></li>
+        <li><a href="cart.html" class="active">Warenkorb</a></li>
+        <li><a href="https://discord.gg/N2kQNP54YK" target="_blank">Discord Server</a></li>
+      </ul>
+    </nav>
+    <div class="hero small">
+      <h1>Dein Warenkorb</h1>
+    </div>
+  </header>
+  <main>
+    <section class="cart-section">
+      <div class="cart-container">
+        <div class="cart-items">
+          <h2>Produkte</h2>
+          <div id="cart-items"><!-- Dynamisch gefüllt --></div>
+        </div>
+        <div class="cart-summary">
+          <h2>Zusammenfassung</h2>
+          <p class="cart-total">Gesamt: <span id="cart-total">0€</span></p>
+          <button id="checkout-btn" class="btn" disabled>Zur Kasse</button>
+          <p class="note">Zahlungsintegration folgt demnächst.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Lizenz‑Shop. Alle Rechte vorbehalten.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
